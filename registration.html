@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="form.css" rel="stylesheet">
+    <?php
+
+
+                session_start();
+
+                $first_num=rand(1,10);
+                $second_num=rand(1,10);
+
+                $operators=array("+","-","*");
+                $operator=rand(0,count($operators)-1);
+                $operator=$operators[$operator];
+
+                $answer=0;
+                switch($operator)
+                {
+                    case "+":
+                        $answer=$first_num + $second_num;
+                        break;
+                    case "-":
+                        $answer=$first_num - $second_num;
+                        break;
+                    case "*";
+                        $answer=$first_num * $second_num;
+                        break;
+                }
+
+
+                $_SESSION["answer"] = $answer;
+
+            ?>
+    <style>
+
+    
+        @media only screen and (max-width: 360px) {
+  .center 
+  { 
+    position: relative;x
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+  .bg1 {  
+            height:110px; width: 640px;
+      }
+  .btm4  {top:1840px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1900px; left:75px;}
+  .btm5  {top:1872px; left:275px; font-size: 12px;}
+  .btm7  {top:1900px; left:275px;}
+  .btm6 {top:1872px; left:450px; font-size: 12px;}
+  .btm3 {top:1900px; left:450px;}
+}
+    @media only screen and (max-width: 640px) {
+  .center 
+  { 
+    position: relative;
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+  .bg1 {  
+            height:110px; width: 640px;
+      }
+  .btm4  {top:1840px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1900px; left:75px;}
+  .btm5  {top:1872px; left:275px; font-size: 12px;}
+  .btm7  {top:1900px; left:275px;}
+  .btm6 {top:1872px; left:450px; font-size: 12px;}
+  .btm3 {top:1900px; left:450px;}
+}
+    @media only screen and (max-width: 411px) {
+  .center 
+  { 
+    position: relative;
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+  .bg1 {  
+            height:110px; width: 640px;
+      }
+  .btm4  {top:1840px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1900px; left:75px;}
+  .btm5  {top:1872px; left:275px; font-size: 12px;}
+  .btm7  {top:1900px; left:275px;}
+  .btm6 {top:1872px; left:450px; font-size: 12px;}
+  .btm3 {top:1900px; left:450px;}
+}
+@media only screen and (max-width: 731px) {
+  .center 
+  { 
+    position: relative;
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+  .bg1 {  
+            height:110px; width: 740px;
+      }
+  .btm4  {top:1840px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1900px; left:75px;}
+  .btm5  {top:1872px; left:275px; font-size: 12px;}
+  .btm7  {top:1900px; left:275px;}
+  .btm6 {top:1872px; left:450px; font-size: 12px;}
+  .btm3 {top:1900px; left:450px;}
+}
+@media only screen and (max-width: 823px) {
+  .center 
+  { 
+    position: relative;
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+     .form {position: relative;
+          left: 50%;
+          width: 550px;
+          height: 801px;
+        }
+  .bg1 {  
+            height:110px; width: 830px;
+      }
+  .btm4  {top:1840px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1900px; left:75px;}
+  .btm5  {top:1872px; left:315px; font-size: 12px;}
+  .btm7  {top:1900px; left:315px;}
+  .btm6 {top:1872px; left:550px; font-size: 12px;}
+  .btm3 {top:1900px; left:550px;}
+}
+@media only screen and (min-width:1024px) {
+  .center 
+  { 
+    position: relative;
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+        .form {position: relative;
+          left: 50%;
+          width: 550px;
+          height: 801px;
+        }
+  .bg1 {  
+            height:110px; width: 1040px;
+      }
+  .btm4  {top:1440px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1500px; left:75px;}
+  .btm5  {top:1472px; left:375px; font-size: 12px;}
+  .btm7  {top:1500px; left:375px;}
+  .btm6 {top:1472px; left:650px; font-size: 12px;}
+  .btm3 {top:1500px; left:650px;}
+}
+@media only screen and (min-width:1366px) { 
+  .center 
+  { 
+    position: relative;
+    height: 135px;
+    width: 135px;
+    right: 340px;
+        }
+        .form {position: relative;
+          left: 50%;
+          width: 550px;
+          height: 801px;
+        }
+  .bg1 {  
+            height:150px; width: 100%;
+      }
+  .btm4  {top:1440px; font-size: 12px; padding: 35px 76px 75px;}
+  .btm0  {top:1500px; left:75px;}
+  .btm5  {top:1472px; left:475px; font-size: 12px;}
+  .btm7  {top:1500px; left:475px;}
+  .btm6 {top:1472px; left:850px; font-size: 12px;}
+  .btm3 {top:1500px; left:850px;}
+}
+  
+       
+  
+
+    </style>
+
+   
+<body bgcolor="#333333">
+  
+    <img src="metlogo2.jpg" class="bg1" height="150px" width="100%">
+    
+        <div class="menu">
+            <ul class="nav-menu">
+               <li ><a href="index.htm">Home</a></li>
+                <li> <a href="maps.html">Maps</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="about us.html ">About Us</a></li>
+                <li> <a href="SocialMedia.html">Social Media</a></li>
+            </ul>
+        </div>
+
+        <b class="btm4"><h4 class="tag">Quick Links</h4></b>
+        <p class="btm0">
+            <a href="https://metbhujbalknowledgecity.ac.in/">Official Website </br></a>
+            <a href="http://metbhujbalknowledgecity.ac.in/bkcevents.php" >Events </br></a>
+            <a href="http://metbhujbalknowledgecity.ac.in/index.php/courses/"> Courses </br></a>
+            <a href="http://metbhujbalknowledgecity.ac.in/index.php/research/"> Research</br></a>
+            <a href="http://onlinepay.metbhujbalknowledgecity.ac.in/" >Online Fees Payment</br></a>
+        </p>
+
+        <b class="btm5"><h4 class="tag">Important Links</h4></b>
+        <p class="btm7">
+            <a href="http://unipune.ac.in/"> SPPU</br></a>
+            <a href="https://www.dtemaharashtra.gov.in/">DTE</br></a>
+            <a href="https://www.aicte-india.org/"> AICTE</br></a>
+            <a href="https://www.coa.gov.in/"> COA</br></a>
+            <a href="https://cdac.in/"> CDAC</br></a>
+        </p>
+
+
+        <b class="btm6"><h4 class="tag">Contact Us</h4></b>
+        <p class="btm3"> <b class="tag">MET League of colleges |Bhujbal</br>
+            Knowledge City</b></br>
+            Adgaon,Nashik-422 003</br>
+            Maharashtra, India</br>
+            Mobile:+91 9881100099</br>
+            Tel:(0253) 2303515, 2303442, 2303348</br>
+            Fax:(0253) 2303203</br>
+            Email:enquiries@bkc.met.edu
+        </p>
+
+        <div class="form">
+
+
+
+
+
+        <h2 class="tri">Registration Form</h2>
+        <form action="form1.php" method="post">
+            <p>Student Name</p>
+            <input type="text" name="Name" placeholder="Enter Full Name" required="">
+            <p>Mobile Number</p>
+            <input type="text" name="Mobile" placeholder="Enter Number" required="">
+
+            <p>Admission Caste</p>
+            <select name="Caste"   class="dropdown" required="">
+            <option value = "caste" selected>Select Caste</option>
+            <option value = "Open" >Open</option>
+            <option value = "OBC">OBC</option>
+            <option value = "SC">SC</option>
+            <option value = "ST">ST</option>
+            <option value = "NT">NT</option>
+            <option value = "VJ">VJ</option>
+            <option value = "SEBC">SEBC</option>
+            </select> <br>
+
+            <b class="gen">Gender</b>
+            <input type="radio" id="male" name="gender" value="Male" class="genders1" required="">
+            <label for="male" class="na1">Male</label>
+            <input type="radio" id="female" name="gender"  required=""  value="Female" class="genders2">
+            <label for="female" class="na2" >Female</label></br>
+
+            <b class="brc">Alloted Branch</b>
+            <select name="Branch"   class="dropdown2" required="">
+            <option value = "branch" selected required="">Select Branch</option>
+            <option value = "Computer Engineering" >Computer Engineering</option>
+            <option value = "Civil Engineering">Civil Engineering</option>
+            <option value = "Mechanical Engineering" >Mechanical Engineering</option>
+            <option value = "Electrical Engineering  " >Electrical Engineering</option>
+            <option value = "Information Technology Engineering" >Information Technology Engineering</option>
+            <option value = "Electronics & Telecommunication Engineering" >Electronics & Telecommunication Engineering</option>
+            </select> <br>
+
+
+
+         
+            <form method="post"  action="form1.php">
+            <?php echo $first_num . " " . $operator . " " . $second_num . " = "; ?>
+
+                <input type="number" name="answer" placeholder="   Enter Captcha" required="" />
+
+
+
+
+
+
+            <input type="submit" onclick="alert('Please ensure that details filled are correct')" name="" value="Register">
+                <p>*All the above fields are mandatory</p>
+        
+
+
+        </form>
+
+        
+
+
+        
+       
+    
+       
+        
+        
+</body>
+</head>
+</html>

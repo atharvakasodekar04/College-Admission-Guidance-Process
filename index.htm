@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COLLEGE ADMISSION PROJECT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+  
+<body bgcolor="#333333">
+    <img src="metlogo2.jpg" class="bg1" height="150px" width="100%">
+    
+        <div class="menu">
+            <ul class="nav-menu">
+                <li class ="active"><a href="index.htm">Home</a></li>
+                <li> <a href="maps.html">Maps</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="about us.html ">About Us</a></li>
+                <li> <a href="SocialMedia.html">Social Media</a></li>
+            </ul>
+        </div>
+
+<div class="slideshow-container">
+
+<hr style="width=100%;">
+<div class="mySlides fade">
+  <img src="sld1.jpg" style="width:100%" height="450px">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="sld2.jpg" class="imn" style="width:100%" height="450px">
+  </div>
+
+<div class="mySlides fade">
+  <img src="sld3.jpg" style="width:100%" height="450px">
+</div>
+<hr>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  }
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+        <div class="Welcome">
+             <font size="3" color="turquoise">
+             <h1 align="center" >WELCOME TO MET-BKC CAMPUS</h1>
+             <h1 align="center" >FOR ADMISSION PROCESS</h1>
+             <h1 align="center">2020-21</h1></font>
+        </div>
+        
+        <div class="marquee">
+            <marquee ><h2>*PLEASE SELECT YOUR ADMISSION COURSE MENTIONED BELOW* *READ INSTRUCTIONS CAREFULLY*  *INCASE OF ANY PROBLEM IN THE WEBSITE PLEASE CONTACT ON 1800-1200-XXX OR VISIT TO NEAR BY STAFF*</h2></marquee>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="3.jpg">
+                </div>
+                <div class="content">
+                    <h2>ENGINEERING</h2>
+                    <p>Proceed for the admission by clicking on Proceed button given below
+                    </p>
+                    <a href="registration.html">PROCEED</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="2.jpg">
+                </div>
+                <div class="content">
+                    <h2>PHARMACY</h2>
+                    <p>Proceed for the admission by clicking on Proceed button given below
+                    </p>
+                    <a href="#">PROCEED</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="1.jpg">
+                </div>
+                <div class="content">
+                    <h2>MANAGEMENT</h2>
+                    <p>Proceed for the admission by clicking on Proceed button given below
+                    </p>
+                    <a href="#">PROCEED</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="4.jpg">
+                </div>
+                <div class="content">
+                    <h2>ARCHITECHTURE</h2>
+                    <p>Proceed for the admission by clicking on Proceed button given below
+                    </p>
+                    <a href="#">PROCEED</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <b class="btm4"><h4>Quick Links</h4></b>
+        <p class="btm0">
+            <a href="https://metbhujbalknowledgecity.ac.in/">Official Website </br></a>
+            <a href="http://metbhujbalknowledgecity.ac.in/bkcevents.php" >Events </br></a>
+            <a href="http://metbhujbalknowledgecity.ac.in/index.php/courses/"> Courses </br></a>
+            <a href="http://metbhujbalknowledgecity.ac.in/index.php/research/"> Research</br></a>
+            <a href="http://onlinepay.metbhujbalknowledgecity.ac.in/" >Online Fees Payment</br></a>
+        </p>
+
+        <b class="btm5"><h4>Important Links</h4></b>
+        <p class="btm7">
+            <a href="http://unipune.ac.in/"> SPPU</br></a>
+            <a href="https://www.dtemaharashtra.gov.in/">DTE</br></a>
+            <a href="https://www.aicte-india.org/"> AICTE</br></a>
+            <a href="https://www.coa.gov.in/"> COA</br></a>
+            <a href="https://cdac.in/"> CDAC</br></a>
+        </p>
+
+
+        <b class="btm6"><h4>Contact Us</h4></b>
+        <p class="btm3"> <b>MET League of colleges |Bhujbal</br>
+            Knowledge City</b></br>
+            Adgaon,Nashik-422 003</br>
+            Maharashtra, India</br>
+            Mobile:+91 9881100099</br>
+            Tel:(0253) 2303515, 2303442, 2303348</br>
+            Fax:(0253) 2303203</br>
+            Email:enquiries@bkc.met.edu
+        </p>
+        <a href="https://www.facebook.com/metbkc/">
+            <img src="facebook1.png" class="fcb"></a></br>
+        <a href="https://www.instagram.com/metbhujbalknowledgecity/?hl=en">
+            <img src="instagram.png" class="ism"></a></br>
+        <a href="https://twitter.com/metbkc?lang=en">
+            <img src="twitter.png" class="ttr"></a>
+
+        
+        <div/>
+</body>
+</head>
+</html>

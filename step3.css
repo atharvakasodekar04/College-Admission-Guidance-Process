@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    position: absolute;
+    padding-right: 500;
+    margin-bottom: 00px;
+    height: 800px;
+    width: auto;
+
+}
+    .nav-menu {
+        float: right;
+        list-style:square;
+        margin-top:7px;
+    }
+    .nav-menu li {
+        display: inline-block;
+    }
+    .nav-menu li  a {
+        color:turquoise;
+        text-decoration:none;
+        padding:5px 20px;
+        font-family:"verdana","sans-serif";
+        font-size:20px;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+        background:#b92d8a;
+    }
+
+.head
+{
+    position:absolute;
+    top: 330px;
+    left:240px;
+    font-size: 33px;
+    color: Yellow;
+}
+
+.head1
+{
+    position:absolute;
+    top: 380px;
+    left:10px;
+    font-size: 23px;
+    color: #4dd2ff;
+}
+.head6
+{
+    position:absolute;
+    top: 645px;
+    left:10px;
+    font-size: 23px;
+    color: #4dd2ff;
+}
+.container
+{
+    margin: 00px;
+    transform: translate(888px,235px);
+    max-width: 900px;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+.container:hover .card
+{
+    filter: blur(5px);
+    transform: scale(.7);
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.container .card:hover
+{
+    filter: blur(0px);
+    transform: scale(1);
+}
+.container .card:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffff66;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card:hover:before
+{
+    background: #b3ff1a;
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(186,251,95,.2);
+}
+.container .card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    background: rgba(186,251,95,.1);
+    z-index: 1;
+}
+.container .card:hover:after
+{
+    transform: scaleY(1.15);
+}
+.container .card:hover
+{
+    z-index: 1;
+}
+.container .card .content
+{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    color: #ff0000;
+}
+.container .card .content h2
+{
+    font-size: 3em;
+}
+.container .card .content p
+{
+    font-size: 0.9em;
+}
+.container .card .content a
+{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+}
+.container .card:hover .content a
+{
+    background: #ff0000;
+}
+.head2
+{
+    position:absolute;
+    top: 470px;
+    left:08px;
+    font-size: 23px;
+    color:#53ff1a;
+}
+.head3
+{
+    position:absolute;
+    top: 500px;
+    left:10px;
+    font-size: 23px;
+    color: #4dd2ff;
+}
+.head4
+{
+    position:absolute;
+    top: 560px;
+    left:10px;
+    font-size: 23px;
+    color: #53ff1a;
+}
+.head5
+{
+    position:absolute;
+    top: 590px;
+    left:10px;
+    font-size: 23px;
+    color: #4dd2ff;
+}
+
+b
+{
+    color: #53ff1a;
+}
+.back
+{
+    position: absolute;
+    top: 280px;
+    height:610px;
+    width:100%;
+    opacity:0.5;
+}
+.back1
+{
+    position: absolute;
+    top: 945px;
+    right: 0px;
+    height:610px;
+    width:100%;
+    opacity:0.5;
+}
+.container1
+{
+    margin: 00px;
+    transform: translate(162px,946px);
+    max-width: 900px;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+.container1:hover .card1
+{
+    filter: blur(5px);
+    transform: scale(.7);
+}
+.container1 .card1
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.container1 .card1:hover
+{
+    filter: blur(0px);
+    transform: scale(1);
+}
+.container1 .card1:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffff66;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container1 .card1:hover:before
+{
+    background: #b3ff1a;
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(186,251,95,.2);
+}
+.container1 .card1:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    background: rgba(186,251,95,.1);
+    z-index: 1;
+}
+.container1 .card1:hover:after
+{
+    transform: scaleY(1.15);
+}
+.container1 .card1:hover
+{
+    z-index: 1;
+}
+.container1 .card1 .content
+{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+.container1 .card1:hover .content
+{
+    color: #ff0000;
+}
+.container1 .card1 .content h2
+{
+    font-size: 3em;
+}
+.container1 .card1 .content p
+{
+    font-size: 0.9em;
+}
+.container1 .card1 .content a
+{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+}
+.container1 .card1:hover .content a
+{
+    background: #ff0000;
+}
+
+.tag
+  {
+    color: black;
+  }
+.links4
+{
+    text-align: center;
+    color: yellow;
+    position:absolute;
+    top: 1605px;
+    right: 8.5%;
+}
+.links5
+{
+    text-align: center;
+    color: yellow;
+    position:absolute;
+    top: 1630px;
+    right:5%;
+}
+
+
+.btm7
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:538px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm0
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:135px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm3 /*MET LEAGUE OF COLLEGES*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1572px;
+    left: 938px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: black;
+  }
+  .btm4 /*quick links*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1502px;
+    left: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    padding: 35px 136px 75px;
+    width: 100%;
+    height: 254px;
+    background: #d9d9d9;  
+    
+  }
+  .btm5
+  {
+    padding:3px;
+    position:absolute;
+    top:1535px;
+    left:538px;
+    font-family: 'Poppins', sans-serif;
+
+    
+  }
+  .btm6
+  {
+    padding:3px;
+    position:absolute;
+    top:1534.5px;
+    left:938px;
+    font-family: 'Poppins', sans-serif;
+  }
+  a
+  {
+    color: black;
+    text-decoration: none;
+  }
+  

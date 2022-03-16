@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    position: absolute;
+    padding-right: 500;
+    margin-bottom: 00px;
+    height: 800px;
+    width: auto;
+
+}
+    .nav-menu {
+        float: right;
+        list-style:square;
+        position: relative;
+        top: 03px;
+    }
+    .nav-menu li {
+        display: inline-block;
+    }
+    .nav-menu li  a {
+        color:turquoise;
+        text-decoration:none;
+        padding:5px 20px;
+        font-family:"verdana","sans-serif";
+        font-size:20px;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+        background:#b92d8a;
+    }
+    .active a {
+        border: 2px solid grey;
+        background-colour: white;
+        background:#b92d8a;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+    }
+
+
+.btm7
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:538px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm0
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:135px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm3 /*MET LEAGUE OF COLLEGES*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1572px;
+    left: 938px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: black;
+  }
+  .btm4 /*quick links*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1502px;
+    left: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    padding: 35px 136px 75px;
+    width: 100%;
+    height: 254px;
+    background: #d9d9d9;  
+    
+  }
+  .btm5
+  {
+    padding:3px;
+    position:absolute;
+    top:1535px;
+    left:538px;
+    font-family: 'Poppins', sans-serif;
+
+    
+  }
+  .btm6
+  {
+    padding:3px;
+    position:absolute;
+    top:1534.5px;
+    left:938px;
+    font-family: 'Poppins', sans-serif;
+  }
+  a
+  {
+    color: black;
+    text-decoration: none;
+  }
+.nu
+{
+    text-align: center;
+    padding: 00px;
+    position: relative;
+    top:-23px;
+}
+.nu1
+{
+    text-align: center;
+    padding: 00px;
+    position: relative;
+    top:-13px;
+
+}
+.nu2
+{
+    text-align: center;
+    padding: 00px;
+    position: relative;
+    top:0px;
+
+}
+.nu4
+{
+    text-align: center;
+    padding: 00px;
+    position: relative;
+    top:-16px;
+
+}
+.nu5
+{
+    text-align: center;
+    padding: 00px;
+    position: relative;
+    top:-15px;
+
+}
+.nu6
+{
+    text-align: center;
+    padding: 00px;
+    position: relative;
+    top:-35px;
+}
+.bx1
+{
+    position: relative;
+    top:37px;
+}
+.bx2
+{
+    position: relative;
+    top:30px;
+}
+.bx3
+{
+    position: relative;
+    top:20px;
+}
+.bx4
+{
+    position: relative;
+    top:20px;
+}
+.bx5
+{
+    position: relative;
+    top:20px;
+}
+.bx6
+{
+    position: relative;
+    top:40px;
+}
+.container
+{
+    margin: 00px;
+    transform: translate(23%, 30%);
+    max-width: 900px;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.container:hover .card
+{
+    filter: blur(5px);
+    transform: scale(.7);
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.container .card:hover
+{
+    filter: blur(0px);
+    transform: scale(1);
+}
+.container .card:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffff66;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card:hover:before
+{
+    background: #b3ff1a;
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(186,251,95,.2);
+}
+.container .card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+    background: rgba(186,251,95,.1);
+    z-index: 1;
+}
+.container .card:hover:after
+{
+    transform: scaleY(1.15);
+}
+.container .card:hover
+{
+    z-index: 1;
+}
+.container .card .content
+{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    color: #ff0000;
+}
+.container .card .content h2
+{
+    font-size: 3em;
+}
+.container .card .content p
+{
+    font-size: 0.9em;
+}
+.container .card .content a
+{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+}
+.container .card:hover .content a
+{
+    background: #ff0000;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    position: absolute;
+    padding-right: 500;
+    margin-bottom: 00px;
+    height: 800px;
+    width: auto;
+
+}
+    .nav-menu {
+        float: right;
+        list-style:square;
+        position: relative;
+        top: 03px;
+    }
+    .nav-menu li {
+        display: inline-block;
+    }
+    .nav-menu li  a {
+        color:turquoise;
+        text-decoration:none;
+        padding:5px 20px;
+        font-family:"verdana","sans-serif";
+        font-size:20px;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+        background:#b92d8a;
+    }
+    .active a {
+        border: 2px solid grey;
+        background-colour: white;
+        background:#b92d8a;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+    }
+
+
+.btm7
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:538px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm0
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:135px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm3 /*MET LEAGUE OF COLLEGES*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1572px;
+    left: 938px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: black;
+  }
+  .btm4 /*quick links*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1502px;
+    left: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    padding: 35px 136px 75px;
+    width: 100%;
+    height: 254px;
+    background: #d9d9d9;  
+    
+  }
+  .btm5
+  {
+    padding:3px;
+    position:absolute;
+    top:1535px;
+    left:538px;
+    font-family: 'Poppins', sans-serif;
+
+    
+  }
+  .btm6
+  {
+    padding:3px;
+    position:absolute;
+    top:1534.5px;
+    left:938px;
+    font-family: 'Poppins', sans-serif;
+  }
+  a
+  {
+    color: black;
+    text-decoration: none;
+  }
+.cnt {
+        padding:100px 70px;
+        color:turquoise;
+        font-family:"verdana","serif";
+    }
+    .nm {
+        margin-top:10px;
+    }
+    .mob {
+        margin-top:50px;
+    }
+    .location {
+        margin-top:30px;
+        color:white;
+    }
+.bg {
+    color: yellow;
+    text-decoration: none;
+}
+.tag
+  {
+    color: black;
+    font-size: 12px;
+  }
+.fcb
+  { 
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 1120px;
+    right: 8px;
+  }
+  .ism
+  { 
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 1160px;
+    right: 8px;
+  }
+  .ttr
+  { 
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 1200px;
+    right: 8px;
+  }

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    position: absolute;
+    padding-right: 500;
+    margin-bottom: 00px;
+    height: 800px;
+    width: auto;
+
+}
+    .nav-menu {
+        float: right;
+        list-style:square;
+        position: relative;
+        top: 03px;
+    }
+    .nav-menu li {
+        display: inline-block;
+    }
+    .nav-menu li  a {
+        color:turquoise;
+        text-decoration:none;
+        padding:5px 20px;
+        font-family:"verdana","sans-serif";
+        font-size:20px;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+        background:#b92d8a;
+    }
+    .nav-menu li a:hover{
+        border:2px solid grey;
+    }
+
+
+.btm7
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:538px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm0
+  {
+   padding:3px;
+   position:absolute;
+   top:1572px;
+   left:135px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+  }
+  .btm3 /*MET LEAGUE OF COLLEGES*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1572px;
+    left: 938px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: black;
+  }
+  .btm4 /*quick links*/
+  {
+    padding:3px;
+    position:absolute;
+    top:1502px;
+    left: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    padding: 35px 136px 75px;
+    width: 100%;
+    height: 254px;
+    background: #d9d9d9;  
+    
+  }
+  .btm5
+  {
+    padding:3px;
+    position:absolute;
+    top:1535px;
+    left:538px;
+    font-family: 'Poppins', sans-serif;
+
+    
+  }
+  .btm6
+  {
+    padding:3px;
+    position:absolute;
+    top:1534.5px;
+    left:938px;
+    font-family: 'Poppins', sans-serif;
+  }
+  a
+  {
+    color: black;
+    text-decoration: none;
+  }
+.form
+{
+
+    position: relative;
+    top: 651px;
+    left: 659px;
+    background:#e6e6e6;  /*#ccccb3*/       
+    opacity: 1;               
+    transform: translate(-50%, -50%);
+    padding: 160px 140px;
+    width: 550px;
+    height: 731px;
+    box-sizing: border-box;
+    border-radius:60px;
+    border: 4px solid #595959;
+
+}
+.users{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top:calc(-100px/2);
+    left:calc(50% - 70px);
+
+}
+h2
+{   
+    padding: 40;
+    margin: auto;
+    font-family: sans-serif;
+    margin:0;
+    position:absolute;
+    font-weight: normal;
+    top: 70px;
+    right:140px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.tri
+{
+    letter-spacing: 2px;
+    height: 80px;
+    padding: 05px;
+    border: 2px solid grey;
+    background: #990099;
+    border-radius: 28px;
+    margin: auto;
+    width: 250px;
+    height: 40px;
+}
+.form p
+{
+    position:relative;
+    top:-15px;
+    left: 1px;
+    font-size: 14px;
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.dropdown
+{
+    position:relative;
+    font-family: sans-serif;
+    right:0 0px;
+    top:-5px;
+    background-color:transparent;
+    border: 0.8px black;
+    border-style:dotted;  
+    color:#ff3300;
+    height: 30px;
+    width: 265px;
+    font-size:14px;
+}
+.form input
+{
+    width : 100%;
+    margin-bottom: 30px;
+}
+.form input[type="text"],
+.form input[type="text"],
+.form input[type="select"]
+{
+    border:none;
+    position:relative;
+    top:-17px;
+    border-bottom: dotted  0.8px black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#ff3300;
+    font-size: 14px;
+
+}
+.form input[type="number"]
+{
+    box-sizing: border-box;
+    /*border-radius:60px;*/
+    text-align:center;
+    border: 0.8px black;
+    position:relative;
+    top:0px;
+    right:-15px;
+    width:130px;
+    border-style:dotted; 
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color:#ff3300;
+    font-size: 16px;
+}
+
+::placeholder
+{
+    color: #ff3300;
+    font-size: 14px;
+
+}
+.form input[type="submit"]
+{
+    border: none;
+    position:relative;
+    top:-5px;
+    right:-80px;
+    outline:none;
+    height:30px;
+    width: 100px;
+    color: yellow;
+    font-size: 16px;
+    background:#871287;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.gen{
+    position:relative;
+    top:17px;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.na1
+{
+    position:relative;
+    top:-45px;
+    left:90px;
+    font-family: sans-serif;
+    font-size:14px;
+    color:#ff3300;
+}
+.na2
+{
+    position:relative;
+    top:-69px;
+    left:90px;
+    font-family: sans-serif;
+    font-size:14px;
+    color:#ff3300;
+}
+.genders1
+{
+    position: relative;
+    top: 02px;
+    right:-35px;
+}
+.genders2
+{
+    position: relative;
+    top: -22px;
+    left:35px;
+}
+.brc
+{
+    position:relative;
+    top:-45px;
+    font-weight:normal;
+    font-size: 14px;
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.dropdown2
+{
+    position:relative;
+    font-family: sans-serif;
+    right:0 0px;
+    top:-35px;
+    background-color:transparent;
+    border: 0.8px black;
+    border-style:dotted;  
+    color:#ff3300;
+    height: 30px;
+    width: 265px;
+    font-size:14px;
+}
+
+
+.form input[type="submit"]:hover
+{
+    background: #660000;
+    color: white;
+}
+.cap /*not in use*/
+{
+    position:absolute;
+    top:25px;
+    left:240px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #608000;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.captcha /*not in use*/
+{
+    position:relative;
+    top:80px;
+    height:40px;
+    width:40px;
+}
